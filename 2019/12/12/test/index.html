@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/Slilianyou/YouGe.github.io">
-  <title>Archives | 李连有的博客</title>
+  <title>从零开始在GitHub上使用Hexo搭建博客教程 (Mac Pro) | 李连有的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="李连有的博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;Slilianyou&#x2F;YouGe.github.io&#x2F;archives&#x2F;index.html">
+  <meta name="description" content="使用理由  免费：github提供gh-pages服务是免费的，有300MB空间； 开源：由于github开源的原因，有很多人参与其中，自然技术支持很好。 便捷：博客完全托管在github上，基本上不需要花时间去管理，博客使用Markdown语法，上手很容易">
+<meta name="keywords" content="github,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零开始在GitHub上使用Hexo搭建博客教程 (Mac Pro)">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;Slilianyou&#x2F;YouGe.github.io&#x2F;2019&#x2F;12&#x2F;12&#x2F;test&#x2F;index.html">
 <meta property="og:site_name" content="李连有的博客">
+<meta property="og:description" content="使用理由  免费：github提供gh-pages服务是免费的，有300MB空间； 开源：由于github开源的原因，有很多人参与其中，自然技术支持很好。 便捷：博客完全托管在github上，基本上不需要花时间去管理，博客使用Markdown语法，上手很容易">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-12T09:37:33.189Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="李连有的博客" type="application/atom+xml">
@@ -153,36 +157,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-test" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/12/test/" class="archive-article-date">
-  	<time datetime="2019-12-12T07:32:27.417Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/12/test/">从零开始在GitHub上使用Hexo搭建博客教程 (Mac Pro)</a>
+    <h1 class="article-title" itemprop="name">
+      从零开始在GitHub上使用Hexo搭建博客教程 (Mac Pro)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/12/12/test/" class="archive-article-date">
+  	<time datetime="2019-12-12T07:32:27.417Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用理由</p>
+<ol>
+<li>免费：github提供gh-pages服务是免费的，有300MB空间；</li>
+<li>开源：由于github开源的原因，有很多人参与其中，自然技术支持很好。</li>
+<li>便捷：博客完全托管在github上，基本上不需要花时间去管理，博客使用Markdown语法，上手很容易</li>
+</ol>
+<a id="more"></a>
+
+<h2 id="一、-注册GitHub"><a href="#一、-注册GitHub" class="headerlink" title="一、 注册GitHub"></a>一、 注册GitHub</h2><ol>
+<li>GitHub官网：<a href="https://github.com/">https://github.com/</a></li>
+<li>创建仓库 ( New repository )：点击在登录的用户图像左边的+号和下三角符号按钮。</li>
+<li>填写创建仓库信息 : 仓库名称必须是,  用户名.github.io  (规定).</li>
+<li>填写好相关信息，点击Create repository(创建仓库)按钮</li>
+</ol>
+<h2 id="二、-配置SSH"><a href="#二、-配置SSH" class="headerlink" title="二、 配置SSH"></a>二、 配置SSH</h2><h3 id="1-使用工具-Mac-终端-设置user-name-和-email"><a href="#1-使用工具-Mac-终端-设置user-name-和-email" class="headerlink" title="1.  使用工具: Mac  终端,设置user name 和 email:"></a>1.  使用工具: Mac  终端,设置user name 和 email:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"你的GitHub用户名"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></span></pre></td></tr></table></figure>
+<h3 id="2-生成ssh密钥-输入下面命令"><a href="#2-生成ssh密钥-输入下面命令" class="headerlink" title="2.  生成ssh密钥:输入下面命令"></a>2.  生成ssh密钥:输入下面命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></span></pre></td></tr></table></figure>
+<p>密码就是开机密码，接下来直接回车就好。<br>此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。<br>注意：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件.</p>
+<h3 id="3-添加公钥到github"><a href="#3-添加公钥到github" class="headerlink" title="3.  添加公钥到github"></a>3.  添加公钥到github</h3><p>a. 点击用户头像，然后点击显示的Settings(设置)选项；<br>b. 在左侧用户设置栏，点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；<br>c. 将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按.</p>
+<h3 id="4-测试SSH-lt-Style-article-entry-h3-border-bottom-0px-gt"><a href="#4-测试SSH-lt-Style-article-entry-h3-border-bottom-0px-gt" class="headerlink" title="4.  测试SSH &lt;Style: .article-entry h3 border-bottom: 0px&gt;"></a>4.  测试SSH &lt;Style: .article-entry h3 border-bottom: 0px&gt;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span></pre></td></tr></table></figure>
+<p>接下来会出来下面的确认信息：输入yes后回车。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Hi Slilianyou! You<span class="string">'ve successfully authenticated, </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="string">but GitHub does not provide shell access.</span></span></pre></td></tr></table></figure>
+<p>准备工作结束!!!</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,19 +243,96 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/Slilianyou/YouGe.github.io/2019/12/12/test/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -233,8 +355,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
