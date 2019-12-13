@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="李连有的博客">
 <meta property="og:description" content="使用理由  免费：github提供gh-pages服务是免费的，有300MB空间； 开源：由于github开源的原因，有很多人参与其中，自然技术支持很好。 便捷：博客完全托管在github上，基本上不需要花时间去管理，博客使用Markdown语法，上手很容易">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T05:15:12.834Z">
+<meta property="og:updated_time" content="2019-12-13T06:17:15.738Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="李连有的博客" type="application/atom+xml">
@@ -195,10 +195,33 @@
 <h3 id="2-生成ssh密钥-输入下面命令"><a href="#2-生成ssh密钥-输入下面命令" class="headerlink" title="2.  生成ssh密钥:输入下面命令"></a>2.  生成ssh密钥:输入下面命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></span></pre></td></tr></table></figure>
 <p>密码就是开机密码，接下来直接回车就好。<br>此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。<br>注意：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件.</p>
 <h3 id="3-添加公钥到github"><a href="#3-添加公钥到github" class="headerlink" title="3.  添加公钥到github"></a>3.  添加公钥到github</h3><p>a. 点击用户头像，然后点击显示的Settings(设置)选项；<br>b. 在左侧用户设置栏，点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；<br>c. 将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按.</p>
-<h3 id="4-测试SSH-lt-Style-article-entry-h3-border-bottom-0px-gt"><a href="#4-测试SSH-lt-Style-article-entry-h3-border-bottom-0px-gt" class="headerlink" title="4.  测试SSH &lt;Style: .article-entry h3 border-bottom: 0px&gt;"></a>4.  测试SSH &lt;Style: .article-entry h3 border-bottom: 0px&gt;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span></pre></td></tr></table></figure>
+<h3 id="4-测试SSH"><a href="#4-测试SSH" class="headerlink" title="4.  测试SSH"></a>4.  测试SSH</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span></pre></td></tr></table></figure>
 <p>接下来会出来下面的确认信息：输入yes后回车。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Hi Slilianyou! You<span class="string">'ve successfully authenticated, </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="string">but GitHub does not provide shell access.</span></span></pre></td></tr></table></figure>
 <p>准备工作结束!!!</p>
+<h2 id="三、安装Nodejs"><a href="#三、安装Nodejs" class="headerlink" title="三、安装Nodejs"></a>三、安装Nodejs</h2><p>请先安装Nodejs，Nodejs官网:<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<h2 id="四、安装Hexo"><a href="#四、安装Hexo" class="headerlink" title="四、安装Hexo"></a>四、安装Hexo</h2><h3 id="1-新建博客文件夹：这里就取名为blog"><a href="#1-新建博客文件夹：这里就取名为blog" class="headerlink" title="1.  新建博客文件夹：这里就取名为blog."></a>1.  新建博客文件夹：这里就取名为blog.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">mkdir blog</span></pre></td></tr></table></figure>
+
+<h3 id="2-进入到blog文件夹："><a href="#2-进入到blog文件夹：" class="headerlink" title="2.  进入到blog文件夹："></a>2.  进入到blog文件夹：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog <span class="comment"># 切换到blog目录</span></span></pre></td></tr></table></figure>
+<h3 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3. 安装Hexo"></a>3. 安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo init</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">npm install</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">hexo server</span></pre></td></tr></table></figure>
+<p>启动之后，打开浏览器，在地址栏输入：<a href="http://localhost:4000，你会看到Hexo的示例页面。" target="_blank" rel="noopener">http://localhost:4000，你会看到Hexo的示例页面。</a></p>
+<h2 id="四、初探Hexo"><a href="#四、初探Hexo" class="headerlink" title="四、初探Hexo"></a>四、初探Hexo</h2><h3 id="1-部署Hexo："><a href="#1-部署Hexo：" class="headerlink" title="1.  部署Hexo："></a>1.  部署Hexo：</h3><p>编辑配置文件，关联远程仓库：<br>在编辑器中打开Hexo配置文件_config.yml，找到下面内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>:</span></pre></td></tr></table></figure>
+<p>添加github仓库信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">type</span>: git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  repository: git@github.com:Slilianyou/Slilianyou.github.io.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
+<p>注意：type、repo、branch的前面有两个空格，后面的:后面有一个空格</p>
+<p>安装git插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span></pre></td></tr></table></figure>
+<p>如果没有安装git插件，会有错误提示，安装后重新部署就可以了</p>
+<p>hexo命令缩写<br>hexo g：hexo generate<br>hexo c：hexo clean<br>hexo s：hexo server<br>hexo d：hexo deploy</p>
+<p>hexo命令组合<br>hexo clean &amp;&amp; hexo g -s，就是清除、生成、启动<br>hexo clean &amp;&amp; hexo g -d，就是清除、生成、部署</p>
+<h3 id="2-清除生成内容："><a href="#2-清除生成内容：" class="headerlink" title="2.  清除生成内容："></a>2.  清除生成内容：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo clean</span></pre></td></tr></table></figure>
+<p>执行此操作会删除public文件夹中的内容。</p>
+<h3 id="3-新建文章："><a href="#3-新建文章：" class="headerlink" title="3.  新建文章："></a>3.  新建文章：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo new &lt;title&gt;</span></pre></td></tr></table></figure>
+<p>此时在source/_posts文件夹中便会多出一个文档”title.md”.<br>如果要删除，直接在此文件夹下删除对应的文件即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo generate</span></pre></td></tr></table></figure>
+<h3 id="4-部署Hexo："><a href="#4-部署Hexo：" class="headerlink" title="4.  部署Hexo："></a>4.  部署Hexo：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo deploy</span></pre></td></tr></table></figure>
+<p>该操作会将hexo生成的静态内容部署到配置的仓库中，请看下面介绍。</p>
 
       
 
